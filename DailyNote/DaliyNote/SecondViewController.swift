@@ -11,9 +11,10 @@ import SQLite3
 
 class SecondViewController: UIViewController{
     
-    
+    //Outlet 변수 및 변수 선언
     @IBOutlet weak var titleTF: UITextField!
     @IBOutlet weak var sublineTF: UITextField!
+    @IBOutlet weak var todayDateTF: UILabel!
     var db: OpaquePointer?
     var testList = [Test]()
 
@@ -70,19 +71,13 @@ class SecondViewController: UIViewController{
         
         //displaying a success message
         print("Test saved successfully")
-//////////////////////////////////////////////////////////////////
-       
+        
+        //화면 이동
         guard let vc1 = self.storyboard?.instantiateViewController(withIdentifier: "vc1") as? ViewController else{
             return
         }
-        
-        // 값을 전달
-
-        // 화면이동
         self.present(vc1, animated: true)
         
-        
-        ///////////////////////////////////////////////////
 
     }
 
@@ -102,6 +97,19 @@ class SecondViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         opendb()
-
+        todayDate2()
     }
+    
+    //Custom Method
+    //오늘의 날짜 출력 함수
+    func todayDate2(){
+        let today = NSDate() //현재 시각 구하기
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy년 M월 d일"
+        let dateString = dateFormatter.string(from: today as Date)
+        print(dateString) //"2019년 7월 15일"
+        
+       todayDateTF?.text = dateString
+    }
+    
 }
