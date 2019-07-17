@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0063FD9422DEED31004918BD /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0063FD9322DEED31004918BD /* SaveViewController.swift */; };
 		00B059C722D59636006C7F7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B059C622D59636006C7F7E /* AppDelegate.swift */; };
 		00B059C922D59636006C7F7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B059C822D59636006C7F7E /* ViewController.swift */; };
 		00B059CC22D59636006C7F7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B059CA22D59636006C7F7E /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0063FD9322DEED31004918BD /* SaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
 		00B059C322D59636006C7F7E /* DaliyNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaliyNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00B059C622D59636006C7F7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00B059C822D59636006C7F7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		00B059C522D59636006C7F7E /* DaliyNote */ = {
 			isa = PBXGroup;
 			children = (
+				0063FD9322DEED31004918BD /* SaveViewController.swift */,
 				00B059C622D59636006C7F7E /* AppDelegate.swift */,
 				00B059C822D59636006C7F7E /* ViewController.swift */,
 				00B059CA22D59636006C7F7E /* Main.storyboard */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00B059F522D59F1D006C7F7E /* SecondViewController.swift in Sources */,
+				0063FD9422DEED31004918BD /* SaveViewController.swift in Sources */,
 				00B059F822D5B5E7006C7F7E /* Test.swift in Sources */,
 				00B059C922D59636006C7F7E /* ViewController.swift in Sources */,
 				00B059C722D59636006C7F7E /* AppDelegate.swift in Sources */,

@@ -22,7 +22,7 @@ class SecondViewController: UIViewController{
         //텍스트 필드의 값 가져오기
         let DN_title = titleTF.text?.trimmingCharacters(in: .whitespacesAndNewlines)
         let DN_subline = sublineTF.text?.trimmingCharacters(in: .whitespacesAndNewlines)
-        
+        let DN_date = todayDateTF.text?.trimmingCharacters(in: .whitespacesAndNewlines)
         //텍스트 필드의 값이 빈 경우의 처리
         if(DN_title?.isEmpty)!{
             titleTF.layer.borderColor = UIColor.red.cgColor
@@ -37,7 +37,7 @@ class SecondViewController: UIViewController{
         var stmt: OpaquePointer?
         
         // 쿼리 집어넣기
-        let queryString = "INSERT INTO Test (DN_title, DN_subline) Values (?,?)"
+        let queryString = "INSERT INTO Test (DN_title, DN_subline, DN_date) Values (?,?,?)"
         
         // 쿼리 준비
         if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
@@ -49,12 +49,18 @@ class SecondViewController: UIViewController{
         // 파라미터 바인딩
      //   let SQLITE_STATIC = unsafeBitCast(0, to: sqlite3_destructor_type.self)
         let SQLITE_TRANSIENT = unsafeBitCast(-1, to: sqlite3_destructor_type.self)
+        
         if sqlite3_bind_text(stmt, 1, DN_title, -1, SQLITE_TRANSIENT) != SQLITE_OK{
             let errmsg = String(cString: sqlite3_errmsg(db)!)
             print("failure binding name: \(errmsg)")
             return
         }
-        if sqlite3_bind_text(stmt, 2, DN_subline, -1, nil) != SQLITE_OK{
+        if sqlite3_bind_text(stmt, 2, DN_subline, -1, SQLITE_TRANSIENT) != SQLITE_OK{
+            let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("failure binding name: \(errmsg)")
+            return
+        }
+        if sqlite3_bind_text(stmt, 3, DN_date, -1, nil) != SQLITE_OK{
             let errmsg = String(cString: sqlite3_errmsg(db)!)
             print("failure binding name: \(errmsg)")
             return
@@ -73,25 +79,22 @@ class SecondViewController: UIViewController{
         print("Test saved successfully")
         
         //화면 이동
-        guard let vc1 = self.storyboard?.instantiateViewController(withIdentifier: "vc1") as? ViewController else{
-            return
-        }
-        self.present(vc1, animated: true)
+        self.navigationController?.popViewController(animated: false)
         
 
     }
-
     func opendb(){
         let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("TestDatabase.sqlite")
         
         if sqlite3_open(fileURL.path, &db) == SQLITE_OK {
             print("DB 열기 실패222")
         }
-        
-        if sqlite3_exec(db, "CREATE TABLE IF NOT EXISTS Test (id INTEGER PRIMARY KEY AUTOINCREMENT, DN_title TEXT, DN_subline TEXT)", nil, nil, nil) != SQLITE_OK {
+        print(fileURL)
+       if sqlite3_exec(db, "CREATE TABLE IF NOT EXISTS Test (id INTEGER PRIMARY KEY AUTOINCREMENT, DN_title TEXT, DN_subline TEXT, DN_date TEXT)", nil, nil, nil) != SQLITE_OK {
             let errmsg = String(cString: sqlite3_errmsg(db)!)
             print("error creating table: \(errmsg)")
         }
+ 
     }
 
     override func viewDidLoad() {

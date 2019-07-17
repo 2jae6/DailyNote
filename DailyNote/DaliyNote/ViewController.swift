@@ -12,7 +12,6 @@ import SQLite3
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     var testList = [Test]()
     @IBOutlet weak var tableViewTest: UITableView!
-    
     @IBOutlet weak var mainToday: UILabel!
     var db: OpaquePointer?
     
@@ -24,6 +23,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     if sqlite3_open(fileURL.path, &db) == SQLITE_OK {
         print("DB 열기 실패")
+        print(fileURL)
     }
         readValues()
     }
@@ -54,9 +54,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let id = sqlite3_column_int(stmt, 0)
             let DN_title = String(cString: sqlite3_column_text(stmt, 1))
             let DN_subline = String(cString: sqlite3_column_text(stmt, 2))
-            
+            let DN_date = String(cString: sqlite3_column_text(stmt, 3))
             //adding values to list
-            testList.append(Test(id: Int(id), DN_title: String(describing: DN_title), DN_subline: String(describing: DN_subline)))
+            testList.append(Test(id: Int(id), DN_title: String(describing: DN_title), DN_subline: String(describing: DN_subline), DN_date: String(describing: DN_date)))
 
         }
         self.tableViewTest.reloadData()
@@ -82,6 +82,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         Test = testList[indexPath.row]
         cell.textLabel?.text = Test.DN_title
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        
+        guard let savevc = self.storyboard?.instantiateViewController(withIdentifier: "savevc") as? SaveViewController else{
+            return
+        }
+        let Test: Test
+        Test = testList[indexPath.row]
+        savevc.idNum = Test.id
+        self.navigationController?.pushViewController(savevc, animated: false)
     }
 }
 
