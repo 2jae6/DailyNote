@@ -17,6 +17,7 @@
 		00B059E722D59638006C7F7E /* DaliyNoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B059E622D59638006C7F7E /* DaliyNoteUITests.swift */; };
 		00B059F522D59F1D006C7F7E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B059F422D59F1D006C7F7E /* SecondViewController.swift */; };
 		00B059F822D5B5E7006C7F7E /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B059F722D5B5E7006C7F7E /* Test.swift */; };
+		00B41F5F22E17E2600D14A7B /* Rewrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B41F5E22E17E2600D14A7B /* Rewrite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		00B059E822D59638006C7F7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00B059F422D59F1D006C7F7E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		00B059F722D5B5E7006C7F7E /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		00B41F5E22E17E2600D14A7B /* Rewrite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rewrite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				00B059D222D59638006C7F7E /* Info.plist */,
 				00B059F422D59F1D006C7F7E /* SecondViewController.swift */,
 				00B059F722D5B5E7006C7F7E /* Test.swift */,
+				00B41F5E22E17E2600D14A7B /* Rewrite.swift */,
 			);
 			path = DaliyNote;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B41F5F22E17E2600D14A7B /* Rewrite.swift in Sources */,
 				00B059F522D59F1D006C7F7E /* SecondViewController.swift in Sources */,
 				0063FD9422DEED31004918BD /* SaveViewController.swift in Sources */,
 				00B059F822D5B5E7006C7F7E /* Test.swift in Sources */,

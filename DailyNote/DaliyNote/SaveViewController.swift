@@ -26,15 +26,30 @@ class SaveViewController: UIViewController{
             print("DB 열기 실패")
         }
         readValues()
+        displayView()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        readValues()
+        displayView()
+    }
+
+    @IBAction func moveToReWrite(_ sender: Any) {
+        guard let rvc = self.storyboard?.instantiateViewController(withIdentifier: "rvc") as? Rewrite else {
+            return
+        }
+        rvc.idNum = idNum
+        self.navigationController?.pushViewController(rvc, animated: false)
+    }
+    
+    
+    //Custom Method
+    func displayView(){
         let Test: Test
         Test = testList[0]
         dateTF?.text = Test.DN_date
         titleTF?.text = Test.DN_title
         sublineTF?.text = Test.DN_subline
     }
-    
-
-    //Custom Method
     func readValues(){
         //first empty the list of Test
         testList.removeAll()
@@ -58,7 +73,6 @@ class SaveViewController: UIViewController{
             //adding values to list
             
             testList.append(Test(id: Int(id), DN_title: String(describing: DN_title), DN_subline: String(describing: DN_subline), DN_date: String(describing: DN_date)))
-            
         }
     }
     
