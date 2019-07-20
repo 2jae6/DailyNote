@@ -14,7 +14,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var tableViewTest: UITableView!
     @IBOutlet weak var mainToday: UILabel!
     var db: OpaquePointer?
-    
+    var deleteNum: Int?
  override func viewDidLoad() {
         super.viewDidLoad()
     //오늘 날짜 표시
@@ -61,6 +61,35 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         self.tableViewTest.reloadData()
     }
+    
+    
+    func deleteData(){
+        //first empty the list of Test
+        testList.removeAll()
+        //this is our select query
+        let queryString = "DELETE FROM Test WHERE id == \(deleteNum!)"
+        //statement pointer
+        var stmt:OpaquePointer?
+        //preparing the query
+        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+            let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("error preparing insert:v2 \(errmsg)")
+            return
+        }
+        
+        
+        while(sqlite3_step(stmt) == SQLITE_ROW){
+            let id = sqlite3_column_int(stmt, 0)
+            let DN_title = String(cString: sqlite3_column_text(stmt, 1))
+            let DN_subline = String(cString: sqlite3_column_text(stmt, 2))
+            let DN_date = String(cString: sqlite3_column_text(stmt, 3))
+            //adding values to list
+            
+            testList.append(Test(id: Int(id), DN_title: String(describing: DN_title), DN_subline: String(describing: DN_subline), DN_date: String(describing: DN_date)))
+        }
+        readValues()
+        
+    }
     func todayDate(){
         let today = NSDate() //현재 시각 구하기
         let dateFormatter = DateFormatter()
@@ -93,6 +122,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         Test = testList[indexPath.row]
         savevc.idNum = Test.id
         self.navigationController?.pushViewController(savevc, animated: false)
+    }
+    
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        let Test: Test
+        Test = testList[indexPath.row]
+        deleteNum = Test.id
+        
+        if editingStyle == UITableViewCell.EditingStyle.delete{
+            testList.remove(at: indexPath.row)
+            tableViewTest.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
+            deleteData()
+        }
+    
     }
 }
 
