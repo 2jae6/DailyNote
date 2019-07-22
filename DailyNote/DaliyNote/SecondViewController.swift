@@ -13,7 +13,7 @@ class SecondViewController: UIViewController{
     
     //Outlet 변수 및 변수 선언
     @IBOutlet weak var titleTF: UITextField!
-    @IBOutlet weak var sublineTF: UITextField!
+    @IBOutlet weak var sublineTF: UITextView!
     @IBOutlet weak var todayDateTF: UILabel!
     var db: OpaquePointer?
     var testList = [Test]()

@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Daliy Note" id="mmV-gi-l4C">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="vbS-Ph-TMT">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="vbS-Ph-TMT">
                                             <connections>
                                                 <segue destination="WQ5-CA-i2F" kind="show" id="6lZ-Kl-xLi"/>
                                             </connections>
@@ -109,9 +109,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjL-AC-DKZ">
-                                <rect key="frame" x="159" y="609" width="56" height="30"/>
+                                <rect key="frame" x="170" y="609" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="저장 하기"/>
+                                <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="addButton:" destination="WQ5-CA-i2F" eventType="touchUpInside" id="9Zg-2u-vBS"/>
                                 </connections>
@@ -130,27 +130,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ifp-v2-pxE">
-                                <rect key="frame" x="65" y="227" width="294" height="331"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="E6X-eq-q6s">
+                                <rect key="frame" x="45" y="269" width="314" height="290"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="textColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.52697001480000005" green="0.81507258410000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="LV4-Q3-4vh"/>
                     </view>
                     <connections>
-                        <outlet property="sublineTF" destination="ifp-v2-pxE" id="3Mx-Ig-CqU"/>
+                        <outlet property="sublineTF" destination="E6X-eq-q6s" id="dI8-6i-yhZ"/>
                         <outlet property="titleTF" destination="1wO-s6-HoB" id="EJX-1N-YlQ"/>
                         <outlet property="todayDateTF" destination="Dx8-lC-ZVa" id="pFq-jw-twW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vbr-uI-p2B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1954" y="-131"/>
+            <point key="canvasLocation" x="1952.8" y="-131.78410794602701"/>
         </scene>
         <!--Title-->
         <scene sceneID="rbO-Xf-zCQ">
@@ -188,17 +188,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTY-wd-BEd">
-                                <rect key="frame" x="23" y="190" width="336" height="419"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="내용" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rti-dC-9oS">
+                                <rect key="frame" x="178" y="157" width="30" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="내용" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhq-wz-S34">
-                                <rect key="frame" x="172" y="161" width="30" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTY-wd-BEd">
+                                <rect key="frame" x="30" y="186" width="312" height="389"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.29083558580000002" blue="0.22198820029999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -207,7 +209,7 @@
                         <viewLayoutGuide key="safeArea" id="hQI-oN-yNJ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="2hP-VG-Acg">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="pWh-Fm-McO">
+                        <barButtonItem key="rightBarButtonItem" title="Modify" style="plain" id="pWh-Fm-McO">
                             <connections>
                                 <action selector="moveToReWrite:" destination="wou-7v-IQ4" id="ziE-fh-xOy"/>
                             </connections>
@@ -232,9 +234,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Nn-uS-DXp">
-                                <rect key="frame" x="168" y="617" width="46" height="30"/>
+                                <rect key="frame" x="174" y="617" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="rewriteButton:" destination="fQU-dK-Fg7" eventType="touchUpInside" id="9WP-b9-r7U"/>
                                 </connections>
@@ -274,20 +276,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P6s-68-H0A">
-                                <rect key="frame" x="51" y="230" width="295" height="379"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="okS-0j-gel">
+                                <rect key="frame" x="41" y="235" width="294" height="347"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="k4X-Lk-cdx"/>
                     </view>
                     <connections>
                         <outlet property="dateTF" destination="wbK-AD-m8O" id="7Vg-Kn-cMy"/>
-                        <outlet property="sublineTF" destination="P6s-68-H0A" id="Bld-pm-HoK"/>
+                        <outlet property="sublineTF" destination="okS-0j-gel" id="e5K-qC-Gsc"/>
                         <outlet property="titleTF" destination="bJQ-dp-lFn" id="zVf-zq-H5i"/>
                     </connections>
                 </viewController>

@@ -18,7 +18,7 @@ class Rewrite:UIViewController{
 
     @IBOutlet weak var dateTF: UILabel!
     @IBOutlet weak var titleTF: UITextField!
-    @IBOutlet weak var sublineTF: UITextField!
+    @IBOutlet weak var sublineTF: UITextView!
     
     
     override func viewDidLoad() {
