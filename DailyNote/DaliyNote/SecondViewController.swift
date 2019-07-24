@@ -9,7 +9,7 @@
 import UIKit
 import SQLite3
 
-class SecondViewController: UIViewController{
+class SecondViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate{
     
     //Outlet 변수 및 변수 선언
     @IBOutlet weak var titleTF: UITextField!
@@ -101,18 +101,57 @@ class SecondViewController: UIViewController{
         super.viewDidLoad()
         opendb()
         todayDate2()
+        titleTF.placeholder = "Please enter a title"
+        
+        sublineTF.delegate = self
+        titleTF.delegate = self
+        textViewSetupView()
+
     }
     
+    //textField return action
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if(titleTF.isEqual(self.titleTF)){ //titleField에서 리턴키를 눌렀다면
+            self.sublineTF.becomeFirstResponder()//컨텐츠필드로 포커스 이동
+        }
+        return true
+    }
+    //textview placeholder
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        textViewSetupView()
+    }
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if sublineTF.text == ""{
+            textViewSetupView()
+        }
+    }
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if text == "\n"{
+            sublineTF.resignFirstResponder()
+        }
+        return true
+    }
+
     //Custom Method
     //오늘의 날짜 출력 함수
     func todayDate2(){
         let today = NSDate() //현재 시각 구하기
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy년 M월 d일"
+        dateFormatter.dateFormat = "yyyy-M-d"
         let dateString = dateFormatter.string(from: today as Date)
         print(dateString) //"2019년 7월 15일"
         
        todayDateTF?.text = dateString
+    }
+    func textViewSetupView(){
+        if sublineTF.text == "Please enter a text"{
+            sublineTF.text = ""
+            sublineTF.textColor = UIColor.black
+            
+        }else if sublineTF.text == ""{
+            sublineTF.text = "Please enter a text"
+            sublineTF.textColor = UIColor.lightGray
+        }
     }
     
 }

@@ -93,7 +93,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func todayDate(){
         let today = NSDate() //현재 시각 구하기
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy년 M월 d일"
+        dateFormatter.dateFormat = "yyyy-M-d"
         let dateString = dateFormatter.string(from: today as Date)
         print(dateString) //"2019년 7월 15일"
         

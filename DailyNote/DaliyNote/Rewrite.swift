@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 import SQLite3
-class Rewrite:UIViewController{
+class Rewrite:UIViewController, UITextFieldDelegate, UITextViewDelegate{
     //필요한 변수들
     var testList = [Test]()
     var db: OpaquePointer?
@@ -29,6 +29,8 @@ class Rewrite:UIViewController{
         if sqlite3_open(fileURL.path, &db) == SQLITE_OK {
             print("DB 열기 실패")
         }
+        titleTF.delegate = self
+        sublineTF.delegate = self
         //데이터 읽어오기
         readValues()
         let Test: Test
@@ -80,8 +82,37 @@ class Rewrite:UIViewController{
         
         
     }
-    
+    //textField return action
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        titleTF.resignFirstResponder()
+        return true
+    }
+    //textview placeholder
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        textViewSetupView()
+    }
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if sublineTF.text == ""{
+            textViewSetupView()
+        }
+    }
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if text == "\n"{
+            sublineTF.resignFirstResponder()
+        }
+        return true
+    }
     //Custom Method
+    func textViewSetupView(){
+        if sublineTF.text == "Please enter a text"{
+            sublineTF.text = ""
+            sublineTF.textColor = UIColor.black
+            
+        }else if sublineTF.text == ""{
+            sublineTF.text = "Please enter a text"
+            sublineTF.textColor = UIColor.lightGray
+        }
+    }
     func readValues(){
         //first empty the list of Test
         testList.removeAll()
