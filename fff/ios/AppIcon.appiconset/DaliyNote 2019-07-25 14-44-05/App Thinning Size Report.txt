@@ -1,0 +1,8 @@
+
+App Thinning Size Report for All Variants of DaliyNote
+
+Variant: DaliyNote-D48ABF70-66CF-46D1-8022-D898B49FBE25.ipa
+Supported variant descriptors: [device: iPad4,5, os-version: 12.2], [device: iPhone8,4, os-version: 12.2], [device: iPad5,3, os-version: 12.2], [device: iPhone6,1, os-version: 12.2], [device: iPod7,1, os-version: 12.2], [device: iPad4,4, os-version: 12.2], [device: iPad6,7, os-version: 12.2], [device: iPhone7,2, os-version: 12.2], [device: iPad5,1, os-version: 12.2], [device: iPhone8,2, os-version: 12.2], [device: iPad4,1, os-version: 12.2], [device: iPad4,8, os-version: 12.2], [device: iPhone7,1, os-version: 12.2], [device: iPod9,1, os-version: 12.2], [device: iPad4,3, os-version: 12.2], [device: iPad7,6, os-version: 12.2], [device: iPad4,9, os-version: 12.2], [device: iPad6,11, os-version: 12.2], [device: iPad7,5, os-version: 12.2], [device: iPad4,6, os-version: 12.2], [device: iPad5,4, os-version: 12.2], [device: iPad6,12, os-version: 12.2], [device: iPad4,7, os-version: 12.2], [device: iPad5,2, os-version: 12.2], [device: iPad6,8, os-version: 12.2], [device: iPad4,2, os-version: 12.2], [device: iPhone6,2, os-version: 12.2], and [device: iPhone8,1, os-version: 12.2]
+App + On Demand Resources size: 73 KB compressed, 223 KB uncompressed
+App size: 73 KB compressed, 223 KB uncompressed
+On Demand Resources size: Zero KB compressed, Zero KB uncompressed
