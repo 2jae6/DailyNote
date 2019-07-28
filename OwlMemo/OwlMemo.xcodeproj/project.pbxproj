@@ -8,19 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		0063FD9422DEED31004918BD /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0063FD9322DEED31004918BD /* SaveViewController.swift */; };
+		0086FCE222EC5F2B00E0402A /* OwlMemoUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0086FCE122EC5F2B00E0402A /* OwlMemoUITest.swift */; };
+		0086FCEA22EC5FA600E0402A /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0086FCE922EC5FA600E0402A /* SnapshotHelper.swift */; };
 		00B059C722D59636006C7F7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B059C622D59636006C7F7E /* AppDelegate.swift */; };
 		00B059C922D59636006C7F7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B059C822D59636006C7F7E /* ViewController.swift */; };
 		00B059CC22D59636006C7F7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B059CA22D59636006C7F7E /* Main.storyboard */; };
 		00B059CE22D59638006C7F7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00B059CD22D59638006C7F7E /* Assets.xcassets */; };
 		00B059D122D59638006C7F7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B059CF22D59638006C7F7E /* LaunchScreen.storyboard */; };
 		00B059DC22D59638006C7F7E /* DaliyNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B059DB22D59638006C7F7E /* DaliyNoteTests.swift */; };
-		00B059E722D59638006C7F7E /* DaliyNoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B059E622D59638006C7F7E /* DaliyNoteUITests.swift */; };
 		00B059F522D59F1D006C7F7E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B059F422D59F1D006C7F7E /* SecondViewController.swift */; };
 		00B059F822D5B5E7006C7F7E /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B059F722D5B5E7006C7F7E /* Test.swift */; };
 		00B41F5F22E17E2600D14A7B /* Rewrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B41F5E22E17E2600D14A7B /* Rewrite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0086FCD622EC5EDA00E0402A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00B059BB22D59636006C7F7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00B059C222D59636006C7F7E;
+			remoteInfo = OwlMemo;
+		};
+		0086FCE422EC5F2B00E0402A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00B059BB22D59636006C7F7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00B059C222D59636006C7F7E;
+			remoteInfo = OwlMemo;
+		};
 		00B059D822D59638006C7F7E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 00B059BB22D59636006C7F7E /* Project object */;
@@ -35,10 +50,22 @@
 			remoteGlobalIDString = 00B059C222D59636006C7F7E;
 			remoteInfo = DaliyNote;
 		};
+		00DB174E22EC165F0079169B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00B059BB22D59636006C7F7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00B059C222D59636006C7F7E;
+			remoteInfo = OwlMemo;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0063FD9322DEED31004918BD /* SaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
+		0086FCD122EC5EDA00E0402A /* OwlMemoUITests3.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OwlMemoUITests3.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0086FCDF22EC5F2B00E0402A /* OwlMemoUITest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OwlMemoUITest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0086FCE122EC5F2B00E0402A /* OwlMemoUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwlMemoUITest.swift; sourceTree = "<group>"; };
+		0086FCE322EC5F2B00E0402A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0086FCE922EC5FA600E0402A /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		00B059C322D59636006C7F7E /* OwlMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OwlMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00B059C622D59636006C7F7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00B059C822D59636006C7F7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,14 +77,27 @@
 		00B059DB22D59638006C7F7E /* DaliyNoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaliyNoteTests.swift; sourceTree = "<group>"; };
 		00B059DD22D59638006C7F7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00B059E222D59638006C7F7E /* OwlMemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OwlMemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		00B059E622D59638006C7F7E /* DaliyNoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaliyNoteUITests.swift; sourceTree = "<group>"; };
-		00B059E822D59638006C7F7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00B059F422D59F1D006C7F7E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		00B059F722D5B5E7006C7F7E /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		00B41F5E22E17E2600D14A7B /* Rewrite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rewrite.swift; sourceTree = "<group>"; };
+		00DB174922EC165F0079169B /* OwlMemoUITests2.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OwlMemoUITests2.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0086FCCE22EC5EDA00E0402A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0086FCDC22EC5F2B00E0402A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		00B059C022D59636006C7F7E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -79,15 +119,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00DB174622EC165F0079169B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0086FCE022EC5F2B00E0402A /* OwlMemoUITest */ = {
+			isa = PBXGroup;
+			children = (
+				0086FCE922EC5FA600E0402A /* SnapshotHelper.swift */,
+				0086FCE122EC5F2B00E0402A /* OwlMemoUITest.swift */,
+				0086FCE322EC5F2B00E0402A /* Info.plist */,
+			);
+			path = OwlMemoUITest;
+			sourceTree = "<group>";
+		};
 		00B059BA22D59636006C7F7E = {
 			isa = PBXGroup;
 			children = (
 				00B059C522D59636006C7F7E /* OwlMemo */,
 				00B059DA22D59638006C7F7E /* OwlMemoTests */,
-				00B059E522D59638006C7F7E /* OwlMemoUITests */,
+				0086FCE022EC5F2B00E0402A /* OwlMemoUITest */,
 				00B059C422D59636006C7F7E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +155,9 @@
 				00B059C322D59636006C7F7E /* OwlMemo.app */,
 				00B059D722D59638006C7F7E /* OwlMemoTests.xctest */,
 				00B059E222D59638006C7F7E /* OwlMemoUITests.xctest */,
+				00DB174922EC165F0079169B /* OwlMemoUITests2.xctest */,
+				0086FCD122EC5EDA00E0402A /* OwlMemoUITests3.xctest */,
+				0086FCDF22EC5F2B00E0402A /* OwlMemoUITest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,18 +188,45 @@
 			path = OwlMemoTests;
 			sourceTree = "<group>";
 		};
-		00B059E522D59638006C7F7E /* OwlMemoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				00B059E622D59638006C7F7E /* DaliyNoteUITests.swift */,
-				00B059E822D59638006C7F7E /* Info.plist */,
-			);
-			path = OwlMemoUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0086FCD022EC5EDA00E0402A /* OwlMemoUITests3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0086FCD822EC5EDA00E0402A /* Build configuration list for PBXNativeTarget "OwlMemoUITests3" */;
+			buildPhases = (
+				0086FCCD22EC5EDA00E0402A /* Sources */,
+				0086FCCE22EC5EDA00E0402A /* Frameworks */,
+				0086FCCF22EC5EDA00E0402A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0086FCD722EC5EDA00E0402A /* PBXTargetDependency */,
+			);
+			name = OwlMemoUITests3;
+			productName = OwlMemoUITests3;
+			productReference = 0086FCD122EC5EDA00E0402A /* OwlMemoUITests3.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		0086FCDE22EC5F2B00E0402A /* OwlMemoUITest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0086FCE822EC5F2B00E0402A /* Build configuration list for PBXNativeTarget "OwlMemoUITest" */;
+			buildPhases = (
+				0086FCDB22EC5F2B00E0402A /* Sources */,
+				0086FCDC22EC5F2B00E0402A /* Frameworks */,
+				0086FCDD22EC5F2B00E0402A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0086FCE522EC5F2B00E0402A /* PBXTargetDependency */,
+			);
+			name = OwlMemoUITest;
+			productName = OwlMemoUITest;
+			productReference = 0086FCDF22EC5F2B00E0402A /* OwlMemoUITest.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		00B059C222D59636006C7F7E /* OwlMemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00B059EB22D59638006C7F7E /* Build configuration list for PBXNativeTarget "OwlMemo" */;
@@ -193,16 +280,42 @@
 			productReference = 00B059E222D59638006C7F7E /* OwlMemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		00DB174822EC165F0079169B /* OwlMemoUITests2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00DB175222EC165F0079169B /* Build configuration list for PBXNativeTarget "OwlMemoUITests2" */;
+			buildPhases = (
+				00DB174522EC165F0079169B /* Sources */,
+				00DB174622EC165F0079169B /* Frameworks */,
+				00DB174722EC165F0079169B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00DB174F22EC165F0079169B /* PBXTargetDependency */,
+			);
+			name = OwlMemoUITests2;
+			productName = OwlMemoUITests2;
+			productReference = 00DB174922EC165F0079169B /* OwlMemoUITests2.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		00B059BB22D59636006C7F7E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
+				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = wook;
 				TargetAttributes = {
+					0086FCD022EC5EDA00E0402A = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 00B059C222D59636006C7F7E;
+					};
+					0086FCDE22EC5F2B00E0402A = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 00B059C222D59636006C7F7E;
+					};
 					00B059C222D59636006C7F7E = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
@@ -212,6 +325,10 @@
 					};
 					00B059E122D59638006C7F7E = {
 						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 00B059C222D59636006C7F7E;
+					};
+					00DB174822EC165F0079169B = {
+						CreatedOnToolsVersion = 10.3;
 						TestTargetID = 00B059C222D59636006C7F7E;
 					};
 				};
@@ -232,11 +349,28 @@
 				00B059C222D59636006C7F7E /* OwlMemo */,
 				00B059D622D59638006C7F7E /* OwlMemoTests */,
 				00B059E122D59638006C7F7E /* OwlMemoUITests */,
+				00DB174822EC165F0079169B /* OwlMemoUITests2 */,
+				0086FCD022EC5EDA00E0402A /* OwlMemoUITests3 */,
+				0086FCDE22EC5F2B00E0402A /* OwlMemoUITest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0086FCCF22EC5EDA00E0402A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0086FCDD22EC5F2B00E0402A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		00B059C122D59636006C7F7E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -261,9 +395,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00DB174722EC165F0079169B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0086FCCD22EC5EDA00E0402A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0086FCDB22EC5F2B00E0402A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0086FCE222EC5F2B00E0402A /* OwlMemoUITest.swift in Sources */,
+				0086FCEA22EC5FA600E0402A /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		00B059BF22D59636006C7F7E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -289,13 +446,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00B059E722D59638006C7F7E /* DaliyNoteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00DB174522EC165F0079169B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0086FCD722EC5EDA00E0402A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00B059C222D59636006C7F7E /* OwlMemo */;
+			targetProxy = 0086FCD622EC5EDA00E0402A /* PBXContainerItemProxy */;
+		};
+		0086FCE522EC5F2B00E0402A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00B059C222D59636006C7F7E /* OwlMemo */;
+			targetProxy = 0086FCE422EC5F2B00E0402A /* PBXContainerItemProxy */;
+		};
 		00B059D922D59638006C7F7E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 00B059C222D59636006C7F7E /* OwlMemo */;
@@ -305,6 +478,11 @@
 			isa = PBXTargetDependency;
 			target = 00B059C222D59636006C7F7E /* OwlMemo */;
 			targetProxy = 00B059E322D59638006C7F7E /* PBXContainerItemProxy */;
+		};
+		00DB174F22EC165F0079169B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00B059C222D59636006C7F7E /* OwlMemo */;
+			targetProxy = 00DB174E22EC165F0079169B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -328,6 +506,82 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0086FCD922EC5EDA00E0402A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ATSSYJGN7N;
+				INFOPLIST_FILE = OwlMemoUITests3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.owl.memo.OwlMemoUITests3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OwlMemo;
+			};
+			name = Debug;
+		};
+		0086FCDA22EC5EDA00E0402A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ATSSYJGN7N;
+				INFOPLIST_FILE = OwlMemoUITests3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.owl.memo.OwlMemoUITests3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OwlMemo;
+			};
+			name = Release;
+		};
+		0086FCE622EC5F2B00E0402A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ATSSYJGN7N;
+				INFOPLIST_FILE = OwlMemoUITest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.owl.memo.OwlMemoUITest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OwlMemo;
+			};
+			name = Debug;
+		};
+		0086FCE722EC5F2B00E0402A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ATSSYJGN7N;
+				INFOPLIST_FILE = OwlMemoUITest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.owl.memo.OwlMemoUITest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OwlMemo;
+			};
+			name = Release;
+		};
 		00B059E922D59638006C7F7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -457,11 +711,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ATSSYJGN7N.com.owl.memo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.owl.memo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -478,11 +732,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ATSSYJGN7N.com.owl.memo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.owl.memo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -576,9 +830,65 @@
 			};
 			name = Release;
 		};
+		00DB175022EC165F0079169B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ATSSYJGN7N;
+				INFOPLIST_FILE = OwlMemoUITests2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wook.OwlMemoUITests2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OwlMemo;
+			};
+			name = Debug;
+		};
+		00DB175122EC165F0079169B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ATSSYJGN7N;
+				INFOPLIST_FILE = OwlMemoUITests2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wook.OwlMemoUITests2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OwlMemo;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0086FCD822EC5EDA00E0402A /* Build configuration list for PBXNativeTarget "OwlMemoUITests3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0086FCD922EC5EDA00E0402A /* Debug */,
+				0086FCDA22EC5EDA00E0402A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0086FCE822EC5F2B00E0402A /* Build configuration list for PBXNativeTarget "OwlMemoUITest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0086FCE622EC5F2B00E0402A /* Debug */,
+				0086FCE722EC5F2B00E0402A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		00B059BE22D59636006C7F7E /* Build configuration list for PBXProject "OwlMemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -611,6 +921,15 @@
 			buildConfigurations = (
 				00B059F222D59638006C7F7E /* Debug */,
 				00B059F322D59638006C7F7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00DB175222EC165F0079169B /* Build configuration list for PBXNativeTarget "OwlMemoUITests2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00DB175022EC165F0079169B /* Debug */,
+				00DB175122EC165F0079169B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

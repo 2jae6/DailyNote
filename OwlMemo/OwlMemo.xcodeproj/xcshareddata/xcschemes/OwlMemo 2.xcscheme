@@ -24,23 +24,22 @@
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
-      selectedDebuggerIdentifier = ""
-      selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "00B059D622D59638006C7F7E"
-               BuildableName = "OwlMemoTests.xctest"
-               BlueprintName = "OwlMemoTests"
+               BlueprintIdentifier = "0086FCD022EC5EDA00E0402A"
+               BuildableName = "OwlMemoUITests3.xctest"
+               BlueprintName = "OwlMemoUITests3"
                ReferencedContainer = "container:OwlMemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
+            skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0086FCDE22EC5F2B00E0402A"
