@@ -10,6 +10,11 @@ import UIKit
 import SQLite3
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+    
+    
+    //사이드메뉴 버튼 아울렛
+    @IBOutlet weak var menuButton: UIBarButtonItem!
+    
     var testList = [Test]()
     @IBOutlet weak var tableViewTest: UITableView!
     @IBOutlet weak var mainToday: UILabel!
@@ -26,13 +31,24 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         print(fileURL)
     }
         readValues()
+        sideMenu()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(false)
         readValues()
         print("갱신 완료")
     }
-    
+    //커스텀 메소드
+    func sideMenu(){
+        if let revealVC = self.revealViewController() {
+            // 버튼이 클릭될 때 메인 컨트롤러에 정의된  revealToggle(_:)을 호출
+            self.menuButton.target = revealVC
+            self.menuButton.action = #selector(revealVC.revealToggle(_:))
+            
+            // 제스쳐를 뷰에 추가
+            self.view.addGestureRecognizer(revealVC.panGestureRecognizer())
+        }
+    }
     func readValues(){
         //first empty the list of Test
         testList.removeAll()

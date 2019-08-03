@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0040B53422F4341B00B8BBB2 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0040B53322F4341B00B8BBB2 /* MenuTableViewController.swift */; };
 		0063FD9422DEED31004918BD /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0063FD9322DEED31004918BD /* SaveViewController.swift */; };
+		0078B12A22F3EAC400D41BFA /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0078B12822F3EAC400D41BFA /* SWRevealViewController.m */; };
 		0086FCE222EC5F2B00E0402A /* OwlMemoUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0086FCE122EC5F2B00E0402A /* OwlMemoUITest.swift */; };
 		0086FCEA22EC5FA600E0402A /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0086FCE922EC5FA600E0402A /* SnapshotHelper.swift */; };
 		00B059C722D59636006C7F7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B059C622D59636006C7F7E /* AppDelegate.swift */; };
@@ -60,7 +62,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0040B53322F4341B00B8BBB2 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		0063FD9322DEED31004918BD /* SaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
+		0078B12722F3EAC300D41BFA /* OwlMemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OwlMemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		0078B12822F3EAC400D41BFA /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		0078B12922F3EAC400D41BFA /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		0086FCD122EC5EDA00E0402A /* OwlMemoUITests3.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OwlMemoUITests3.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0086FCDF22EC5F2B00E0402A /* OwlMemoUITest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OwlMemoUITest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0086FCE122EC5F2B00E0402A /* OwlMemoUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwlMemoUITest.swift; sourceTree = "<group>"; };
@@ -165,6 +171,8 @@
 		00B059C522D59636006C7F7E /* OwlMemo */ = {
 			isa = PBXGroup;
 			children = (
+				0078B12922F3EAC400D41BFA /* SWRevealViewController.h */,
+				0078B12822F3EAC400D41BFA /* SWRevealViewController.m */,
 				0063FD9322DEED31004918BD /* SaveViewController.swift */,
 				00B059C622D59636006C7F7E /* AppDelegate.swift */,
 				00B059C822D59636006C7F7E /* ViewController.swift */,
@@ -175,6 +183,8 @@
 				00B059F422D59F1D006C7F7E /* SecondViewController.swift */,
 				00B059F722D5B5E7006C7F7E /* Test.swift */,
 				00B41F5E22E17E2600D14A7B /* Rewrite.swift */,
+				0078B12722F3EAC300D41BFA /* OwlMemo-Bridging-Header.h */,
+				0040B53322F4341B00B8BBB2 /* MenuTableViewController.swift */,
 			);
 			path = OwlMemo;
 			sourceTree = "<group>";
@@ -318,6 +328,7 @@
 					};
 					00B059C222D59636006C7F7E = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1030;
 					};
 					00B059D622D59638006C7F7E = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -425,9 +436,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0078B12A22F3EAC400D41BFA /* SWRevealViewController.m in Sources */,
 				00B41F5F22E17E2600D14A7B /* Rewrite.swift in Sources */,
 				00B059F522D59F1D006C7F7E /* SecondViewController.swift in Sources */,
 				0063FD9422DEED31004918BD /* SaveViewController.swift in Sources */,
+				0040B53422F4341B00B8BBB2 /* MenuTableViewController.swift in Sources */,
 				00B059F822D5B5E7006C7F7E /* Test.swift in Sources */,
 				00B059C922D59636006C7F7E /* ViewController.swift in Sources */,
 				00B059C722D59636006C7F7E /* AppDelegate.swift in Sources */,
@@ -702,6 +715,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ATSSYJGN7N;
@@ -714,6 +728,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.owl.memo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "OwlMemo/OwlMemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -723,6 +739,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ATSSYJGN7N;
@@ -735,6 +752,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.owl.memo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "OwlMemo/OwlMemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
